@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Laboratory 5</title>
+</head>
+<body>
+  <h1>Laboratory 5</h1>
+  <div>
+    <button onclick="time_now()">Show Current Date</button>
+    <p id="currentDate"></p>
+  </div>
+  <hr>
+  <div>
+    <form id="studentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name"><br><br>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age"><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email"><br><br>
+      
+      <label for="course">Course:</label>
+      <select id="course">
+        <option value="">Select a course</option>
+        <option value="BA Food Appreciation">BA Food Appreciation</option>
+        <option value="BA Applied Poetry of the Future">BA Applied Poetry of the Future</option>
+        <option value="BA Uncensored Communications">BA Uncensored Communications</option>
+        <option value="BS Computer Repair Shop">BS Computer Repair Shop</option>
+        <option value="BS Video Gaming">BS Video Gaming</option>
+        <option value="BS Installing and Downloading">BS Installing and Downloading</option>
+      </select>
+      <button type="button" onclick="add_student()">Submit</button>
+    </form>
+  </div>
+  <div>
+    <form>
+      <label for="name">Search ID</label>
+      <input type="text" id="searchID" name="searchID">
+      <button type="button" onclick="find_student()">Search ID</button>
+    </form>
+    <p id="result"></p>
+  </div>
+  <div>
+    <button onclick="display_list()">Display All</button>
+    <p id="studentListDisplay"></p>
+  </div>
+  <script src="JAHVAHscript.js"></script>
+</body>
+</html>
+
